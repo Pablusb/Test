@@ -1,0 +1,206 @@
+body 
+{
+   background: #FFFFFF;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+ul
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+
+h1 {
+	font-size: 18pt;
+	color: #F00;
+}
+
+#header
+{
+    clear:both;
+}
+
+.span2 {
+	width: 16.66667%;
+	float: left;
+}
+
+.span8 {
+	width: 66.66667%;
+	float: left;
+}
+
+.span12 {
+	width: 100%;
+	float: left;
+}
+
+.center {
+	width: 500px;
+	margin: 0px auto;
+}
+
+.gray
+{
+    background-color: #FAFAFA;
+}
+
+.checkimg
+{
+    float:left; 
+    height:20px; 
+    width:20px; 
+}
+
+.respuestapregunta
+{
+   font-size:14px;
+    width:30%;
+}
+.textopregunta
+{
+    width:65%;
+    text-align:left;
+    /*float:left;*/
+   font-size:14px;
+}
+
+#acciones
+{
+     margin-top:20px;
+     text-align:center;
+}
+
+.boton{
+    background:#A0A0A0; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;  
+    border-radius: 5px;
+    padding: .5em 1.5em;
+    color: white;
+    font-weight:normal;
+    font-size:12px;
+    text-decoration:none;
+}
+.boton:hover {
+    background:#1A5DB3;
+    background-image: -webkit-linear-gradient(bottom,#0D98FB,#1A5DB3);
+    background-image: -moz-linear-gradient(bottom,#0D98FB,#1A5DB3);
+    background-image: -o-linear-gradient(bottom,#0D98FB,#1A5DB3);   
+    background-image: linear-gradient(to top,#0D98FB,#1A5DB3);
+    cursor: pointer;
+}
+
+#menu 
+{
+    font-size:medium;
+    z-index:1000;
+    float:right;
+	list-style:none;
+	background: #FFFFFF;/* #2A4E69;*/
+	width:30%;
+}
+
+#menu li {
+    width:100%;
+    z-index:1000;
+	float:right;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 4px 3px 4px 32px;
+}
+
+#menu li:hover {
+	background: #4E6E82;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#menu li a {
+	color: White;
+	font-size: small;
+	text-decoration:none;
+}
+
+/*Elementos a seleccionados*/
+#menu li:hover a {
+	color:White;
+}
+
+/* contenedores de los desplegables */
+.dropdown {
+	margin:4px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #777777;
+	border-top:none;
+	background:#4E6E82;/*405D6E*/
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+#menu li:hover .dropdown{
+	left:-1px;
+	top:auto;
+} 
+
+#menu li ul.listapad0 {
+	list-style:none;
+	padding:0;
+	margin:0 0 14px 0;
+}
+
+#menu li ul li {
+	position:relative;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	line-height:140%;
+}
+
+#menu li ul li:hover {
+	background:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+#menuimg
+{
+    float: right;
+    width:100%;
+}
+
+#novartislogo
+{
+    float: left;
+    width:25%;
+}
+
+#mostrarresultado
+{
+     margin-top:10%;
+     margin-left:5%;
+    float: left;
+}
+
+#limpiar
+{
+     margin-top:10%;
+     margin-left:5%;
+    float: left;
+}
