@@ -37,24 +37,16 @@
                   <li><a href="pacientes.html" target="_parent">Pacientes</a></li>
               </ul>
       </div>
-      <div style="margin-top:10px; margin-bottom:15px;">
+    <div id="pacientescomandos"style="margin-top:10px; margin-bottom:15px;">
        <span style="font-size:large; padding-left:5px; color:#003f59;">Pacientes</span>
-       <input type="button" value="Agregar" class="k-button" onclick="agregarPaciente()" style="float:right; margin-left:5px;"/>
-       <input type="button" value="Estudio" class="k-button" style="float:right; margin-left:5px;"/>
-       <input type="button"value="Visita médica" class="k-button" style="float:right; margin-left:5px; margin-right:5px;"/>
-    </div>
-    <div id="popup" title="Agregar paciente">
-
-        <table>
+       <input type="button" value="Agregar" class="k-button" onclick="agregarPaciente()" style="float:right; margin-left:5px; font-size:small; margin-right:10px;"/>
+       <input type="button" value="Estudio" class="k-button" style="float:right; margin-left:5px;font-size:small; margin-right:10px;"/>
+       <input type="button"value="Visita médica" class="k-button" style="float:right; margin-left:5px; margin-right:5px;font-size:small; margin-right:10px;"/>
+       <div id="popup" title="Agregar paciente">
+       <table>
             <tr>
                 <td>
                     <label>Nombre</label></td>
-                <td>
-                    <input type="text" /></td>
-            </tr>
-            <tr>
-                <td>
-                    <label>DNI</label></td>
                 <td>
                     <input type="text" /></td>
             </tr>
@@ -76,12 +68,9 @@
                 <td>
                     <input type="text" /></td>
             </tr>
-        </table>
-        
-
+        </table>  
        <script type="text/javascript">
-           $(function ()
-           {
+           $(function () {
                $("#popup").dialog({
                    height: 220,
                    width: 240,
@@ -89,23 +78,19 @@
                    modal: true,
                    autoOpen: false,
                    buttons: {
-                       "Cancelar": function ()
-                       {
+                       "Cancelar": function () {
                            $(this).dialog("close");
                        },
-                       "Guardar": function ()
-                       {
+                       "Guardar": function () {
                            $(this).dialog("close");
                        }
                    }
                });
            });
         </script>
-
     </div>
-
-    <div id="gridDetalle"></div>
-
+    </div>
+    <div id="gridDetalle">
         <script>
             function agregarPaciente() {
                 $("#popup").dialog("open");
@@ -115,35 +100,35 @@
             $("#gridDetalle").kendoGrid({
                 columns: [
                          { field: "Nombre" },
-                         { field: "DNI" },
                          { field: "Edad" },
                          { field: "ObraSocial" },
                          { field: "Plan" },
                 ],
                 dataSource: {
                     data:[
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
-                        { Nombre: "Jorge Sosa", DNI: 234555634, Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
+                        { Nombre: "Jorge Sosa", Edad: 32, ObraSocial: "OSDE", Plan: 310 },
                     ]
                 },
             });
             
     </script>
+    </div>
+    <div class="footer">
+        <img class="screenwithimg" src="img/index_22.png"/>
+    </div>
 </body>
 </html>
