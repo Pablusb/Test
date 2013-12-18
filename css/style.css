@@ -91,7 +91,7 @@ h1 {
     padding: .5em 1.5em;
     color: white;
     font-weight:normal;
-    font-size:12px;
+    font-size: medium;
     text-decoration:none;
 }
 .boton:hover {
