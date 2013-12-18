@@ -22,7 +22,7 @@ h1 {
 }
 
 h3 {
-	font-size: x-large;
+	font-size: large;
 	color: #003f59;
 	font-weight:normal;
 }
@@ -78,7 +78,6 @@ h3 {
     width:65%;
     text-align:left;
     /*float:left;*/
-   font-size:large;
 }
 
 #acciones
