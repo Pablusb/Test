@@ -32,8 +32,8 @@
     <icon src="img/icons/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" /> <!-- 144 pixels -->
     <icon src="img/icons/android/xxxhdpi.png" gap:platform="android" gap:density="xxxhdpi" /> <!-- 192 pixels -->
         
-    <icon src="img/icons/winphone/icon.png" gap:platform="winphone" /> <!-- 57 pixels -->
-    <icon src="img/icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" /> <!-- 72 pixels -->
+    <icon src="img/icons/blackberry/icon.png" gap:platform="blackberry" /> <!-- 57 pixels -->
+    <icon src="img/icons/blackberry/tileicon.png" gap:platform="blackberry" gap:role="background" /> <!-- 72 pixels -->
         
     <!-- SPLASH SCREENS -->
         
@@ -52,17 +52,17 @@
     <gap:splash src="img/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" /> <!-- 480x800 -->
     <gap:splash src="img/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> <!-- 720x1280 -->
         
-    <gap:splash src="img/splash/winphone/splash.jpg" gap:platform="winphone" /> <!-- Windows Phone 7 480x800 -->
+    <gap:splash src="img/splash/blackberry/splash.jpg" gap:platform="blackberry" /> <!-- Windows Phone 7 480x800 -->
 
     <!-- PLATFORM SELECTION -->
 
     <gap:platform name="ios" />
     <gap:platform name="android" />
-    <gap:platform name="winphone" />
+    <gap:platform name="blackberry" />
         
     <!-- GENERAL PREFERENCES -->
         
-    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="phonegap-version" value="3.2.0" />
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="true" /> <!-- remove the upper bar on iOS and Android -->
         
